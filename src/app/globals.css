@@ -1,0 +1,250 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+header{
+    cursor: pointer;
+}
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+
+.swipe1{
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url('https://wdthikez.wpengine.com/wp-content/uploads/2024/06/Demo-1-Slider-Image.jpg');
+    z-index: -999;
+    height: 110vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.swipe2{
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url('https://wdthikez.wpengine.com/wp-content/uploads/2024/07/Slider-Image-2.jpg');
+    z-index: -999;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.swipe3{
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url('https://wdthikez.wpengine.com/wp-content/uploads/2024/07/Slider-Image-1.jpg');
+    z-index: -999;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.swipe4{
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url('https://wdthikez.wpengine.com/wp-content/uploads/2024/07/Slider-Image-4.jpg');
+    z-index: -999;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.swiper-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 1px;
+    font-weight: 400;
+    animation: fade 1.5s ease-in;
+    width: 65vw;
+}
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+nav li:hover{
+        --tw-text-opacity: 1;
+        color: rgb(253 224 71) /* #fde047 */;
+        transition: all 0.8s ease;
+}
+.swiper-content{
+    h2{
+        font-family: "Nerko One", cursive;
+        font-weight: 700;
+        font-style: normal;
+    }
+}
+.plane{
+    display: inline-flex;
+}
+.arrow {
+    display: inline-flex;
+    margin: auto;
+    font-size: 50px;
+    overflow: hidden;
+    animation: scrollDown 2.4s ease-in infinite;
+    transform-origin: 50% 0%;
+    opacity: 80%;
+}
+
+@keyframes scrollDown {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(40px);
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 0;
+    }
+}
+.sec2{
+    background: linear-gradient(rgba(255, 255, 255, 0.255),rgba(255, 255, 255, 0.255)), url('https://wdthikez.wpengine.com/wp-content/uploads/2024/05/Hikez-about-img.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.sec3{
+    background: linear-gradient(#ede5d5fa,#ede5d5fa), url('https://wdthikez.wpengine.com/wp-content/uploads/2024/07/Hikez-Pattern-Img-2.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+@import url('https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+.pops img{
+    transition: all 0.9s ease;
+}
+.pops-inner{
+    position: absolute;
+    left: 0px;
+    bottom: 20px;
+    color: white;
+    line-height: 1.2;
+}
+.pops-inner h3{
+    font-family: "Volkhov", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 28px;
+}
+.pops-inner{
+    transform: translateY(90px);
+    transform-origin: top;
+    transition: 0.4s;
+    z-index: 10;
+}
+.pops:hover .pops-inner{
+    transform: translateY(0px);
+}
+.sec4 h4{
+    font-family: "Volkhov", serif;
+    font-weight: bolder;
+    font-style: normal;
+}
+.sec5{
+    background: linear-gradient(#f5fefdf6, #f5fefdea), url('https://wdthikez.wpengine.com/wp-content/uploads/2024/07/Hikez-Pattern-Img-1.png');
+}
+.volkov{
+    font-family: "Volkhov", serif;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 1.2;
+}
+.pops:hover img{
+    transform: scale(1.05);
+}
+.pops::before{
+    content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.8));
+        background-size: 100% 80%, 100% 100%;
+        background-position: 100% 100%, 100% 100%;
+        background-repeat: no-repeat;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        opacity: .8;
+        margin: auto;
+}
+.banner{
+    background: linear-gradient(#160647e1, #160647d9), url('https://wdthikez.wpengine.com/wp-content/uploads/2024/05/Hikez-video-banner-bg-img.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner img{
+    transition: all 1.4s ease;
+    transform-origin: center;
+}
+.banner:hover img{
+    transform: rotate(0deg);
+}
+.banner:hover .play{
+    background: rgb(253 224 71);
+    color: black;
+    outline: solid 2px rgb(253 224 71);
+    cursor: pointer;
+}
+.package-thumb::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(180deg, transparent, black);
+        background-size: 100% 80%, 100% 100%;
+        background-position: 100% 100%, 100% 100%;
+        background-repeat: no-repeat;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        opacity: .8;
+        margin: auto;
+}
+.package-thumb h6{
+    line-height: 1.2;
+    transition: all .9s ease-in-out;
+}
+.package-thumb:hover h6{
+    color: #FDE047;
+}
+.package-thumb:hover img{
+    transform: scale(1.1);
+}
+.teams{
+    background: linear-gradient(rgba(237, 230, 213, 0.95), rgba(237, 230, 213, 0.90)), url('https://wdthikez.wpengine.com/wp-content/uploads/2024/07/Hikez-Pattern-Img-1.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.footer1{
+    background: linear-gradient(rgba(22, 6, 71, 0.85), rgba(22, 6, 71, 0.88)), url('https://wdthikez.wpengine.com/wp-content/uploads/2024/06/Footer-1-Bg-img.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all .4s ease;
+}
+.footer1 li{
+    font-size: 15px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: capitalize;
+    a{
+        transition: all .9s ease-in-out;
+    }
+}
+.footer1 li:hover a{
+    color: #FBD71C;
+    opacity: .9;
+}
+@import url('https://fonts.googleapis.com/css2?family=Fruktur:ital@0;1&family=Permanent+Marker&display=swap');
+.pasa{
+    font-family: "Permanent Marker", cursive;
+    font-weight: 700;
+    font-style: italic;
+}
