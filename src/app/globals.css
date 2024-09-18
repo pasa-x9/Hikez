@@ -21,7 +21,7 @@ header{
     position: relative;
     background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url('https://wdthikez.wpengine.com/wp-content/uploads/2024/07/Slider-Image-2.jpg');
     z-index: -999;
-    height: 100vh;
+    height: 110vh;
     width: 100vw;
     background-size: cover;
     background-position: center;
@@ -31,7 +31,7 @@ header{
     position: relative;
     background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url('https://wdthikez.wpengine.com/wp-content/uploads/2024/07/Slider-Image-1.jpg');
     z-index: -999;
-    height: 100vh;
+    height: 110vh;
     width: 100vw;
     background-size: cover;
     background-position: center;
@@ -41,13 +41,42 @@ header{
     position: relative;
     background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url('https://wdthikez.wpengine.com/wp-content/uploads/2024/07/Slider-Image-4.jpg');
     z-index: -999;
-    height: 100vh;
+    height: 110vh;
     width: 100vw;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
-.swiper-content{
+.swipe1 .swiper-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 1px;
+    font-weight: 400;
+    animation: fade 1.5s ease-in;
+    width: 65vw;
+}
+.swipe2 .swiper-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 1px;
+    font-weight: 400;
+    animation: fade 1.5s ease-in;
+    width: 65vw;
+}
+.swipe3 .swiper-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 1px;
+    font-weight: 400;
+    animation: fade 1.5s ease-in;
+    width: 65vw;
+}.swipe4 .swiper-content{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -58,10 +87,10 @@ header{
     width: 65vw;
 }
 @keyframes fade{
-    0%{
+    from{
         opacity: 0;
     }
-    100%{
+    to{
         opacity: 1;
     }
 }
@@ -72,9 +101,10 @@ nav li:hover{
 }
 .swiper-content{
     h2{
-        font-family: "Nerko One", cursive;
-        font-weight: 700;
+        font-family: "Volkhov", serif;
+        font-weight: 900;
         font-style: normal;
+        font-size: clamp(2.1875rem, 1.7983rem + 2.1472vw, 4.375rem);
     }
 }
 .plane{

@@ -27,7 +27,6 @@ export default function Home() {
     <>
     <section className='relative'>
     <Swiper
-        spaceBetween={30}
         effect={'fade'}
         loop={true}
         autoplay={{
